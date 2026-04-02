@@ -10,6 +10,9 @@ Claude Code in Action
 - Controlling context
 - Custom command
 - MCP iteration (playwright)
+- Github integration:
+    - /install-github-app
+    - Screenshot and test button toggle inside Github (playwright)
 
 Prompt
 ```
