@@ -56,7 +56,7 @@ JWT-based with httpOnly cookies (7-day expiry). `src/lib/auth.ts` handles token 
 
 ### Database
 
-Prisma + SQLite (`prisma/dev.db`). Two models: `User` and `Project`. Projects store serialized message history and file system state as JSON strings. Only authenticated users have projects persisted.
+Prisma + SQLite (`prisma/dev.db`). The schema is defined in `prisma/schema.prisma` — always reference it to understand the data structure. Two models: `User` and `Project`. Projects store serialized message history and file system state as JSON strings. Only authenticated users have projects persisted.
 
 ### State Management
 
@@ -67,6 +67,10 @@ Two React contexts wire everything together:
 ### UI Layout (`src/app/main-content.tsx`)
 
 Left 35%: chat panel (`MessageList` + `MessageInput`). Right 65%: tabbed Preview (iframe) / Code (file tree + Monaco editor) view.
+
+## Code Style
+
+- Use comments sparingly — only for complex or non-obvious logic.
 
 ## Testing
 
