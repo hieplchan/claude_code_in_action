@@ -13,6 +13,7 @@ Claude Code in Action
 - Github integration:
     - /install-github-app
     - Screenshot and test button toggle inside Github (playwright)
+- Hooks
 
 Prompt
 ```
